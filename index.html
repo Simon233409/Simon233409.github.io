@@ -1,11 +1,257 @@
-<!DOCTYPE html> 
-<html> 
-<head> 
-<meta charset="UTF-8"> 
-<title>My First Website</title> 
-</head> 
-<body> 
-<h1>Hello, this is my website!</h1> 
-<p>這是我用 GitHub Pages 架設的免費網站。</p> 
-</body> 
-</html> 
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart-E Robo | 兩階段 ETF 智能理財系統</title>
+    <style>
+        :root {
+            --primary-color: #1a3a5f;
+            --secondary-color: #2a5a8a;
+            --accent-color: #e74c3c;
+            --bg-light: #f4f7f6;
+            --text-dark: #333;
+        }
+
+        body {
+            font-family: "Microsoft JhengHei", sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h1, h2, h3 {
+            color: var(--primary-color);
+        }
+
+        .hero-title {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .authors {
+            font-size: 0.9rem;
+            margin-top: 10px;
+            opacity: 0.8;
+        }
+
+        .pain-points {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            flex: 1;
+            min-width: 280px;
+            background: #fff;
+            border-left: 5px solid var(--accent-color);
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+
+        .highlight {
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px;
+            color: #777;
+            font-size: 0.8rem;
+        }
+
+        .methodology-step {
+            border: 1px solid #e1e8ed;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            background-color: #f9fbfc;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1 class="hero-title">兩階段 ETF 智能理財系統</h1>
+        <p>Smart-E Robo: 解決「垃圾進，垃圾出」的量化投資方案</p>
+        <div class="authors">
+            謝尚均 (痛點分析、結論) | 郭俊霖 (主題發想、創新提案) | 盧新瑋 (方法論、實作展示)
+        </div>
+    </div>
+</header>
+
+<div class="container">
+
+    <section class="section">
+        <h2>📌 核心痛點分析</h2>
+        <p>多數 Robo-Advisor 直接將市場所有標的投入最佳化模型，卻忽略了「標的篩選」的重要性。</p>
+        <div class="pain-points">
+            <div class="card">
+                <h3>流動性陷阱</h3>
+                <p>許多主題型 ETF 日交易量 (ADV) 過低，導致投資人面臨較大的買賣價差與交易摩擦成本。</p>
+            </div>
+            <div class="card">
+                <h3>追蹤誤差</h3>
+                <p>標的報酬率無法有效跟隨基準指數，增加不必要的非系統性風險。</p>
+            </div>
+            <div class="card">
+                <h3>高昂成本</h3>
+                <p>內扣費用過高的標的會嚴重侵蝕長期預期報酬。</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>🛠️ Smart-E 篩選與優化架構</h2>
+        
+        <div class="methodology-step">
+            <h3>第一階段：量化評級篩選</h3>
+            <p>針對<strong>資產規模(AUM)</strong>、<strong>日均交易量(ADV)</strong>、<strong>內扣費用</strong>與<strong>主動風險</strong>進行評分，剔除綜合評分後 50% 的標的。</p>
+        </div>
+
+        <div class="methodology-step">
+            <h3>第二階段：最佳化權重配置</h3>
+            <p>基於 Markowitz 現代投資組合理論 (MPT)，僅針對入選優質池的標的進行資產配置，產出最佳效率前緣。</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>📊 ETF 評級計分 (Top 5 示例)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>代碼 (Ticker)</th>
+                    <th>流動性 (ADV)</th>
+                    <th>主動風險 (Risk)</th>
+                    <th>總費用 (Cost)</th>
+                    <th>總評分</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>0050.TW</td>
+                    <td>135,087</td>
+                    <td>6.69</td>
+                    <td>0.43%</td>
+                    <td><strong>27.0</strong></td>
+                </tr>
+                <tr>
+                    <td>006208.TW</td>
+                    <td>5,348</td>
+                    <td>6.08</td>
+                    <td>0.25%</td>
+                    <td><strong>22.0</strong></td>
+                </tr>
+                <tr>
+                    <td>00878.TW</td>
+                    <td>73,507</td>
+                    <td>11.52</td>
+                    <td>0.50%</td>
+                    <td>18.0</td>
+                </tr>
+                <tr>
+                    <td>00905.TW</td>
+                    <td>1,787</td>
+                    <td>7.14</td>
+                    <td>0.35%</td>
+                    <td>18.0</td>
+                </tr>
+                <tr>
+                    <td>00929.TW</td>
+                    <td>52,269</td>
+                    <td>12.19</td>
+                    <td>0.45%</td>
+                    <td>16.0</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="section">
+        <h2>📈 績效回測對比 (2023-2026)</h2>
+        <p>Smart-E 系統相較於傳統等權重配置，展現了顯著的超額報酬。</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>指標</th>
+                    <th>Smart-E (兩階段優化)</th>
+                    <th>Equal Weight (傳統配置)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>累積報酬率</td>
+                    <td class="highlight">169.8%</td>
+                    <td>102.6%</td>
+                </tr>
+                <tr>
+                    <td>最大回檔 (MDD)</td>
+                    <td>-27.26%</td>
+                    <td>-25.85%</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>💡 <em>結論：雖然最大回檔略高，但換取了高達 67% 的超額報酬，具備更高的夏普值。</em></p>
+    </section>
+
+    <section class="section">
+        <h2>🚀 商業應用價值</h2>
+        <ul>
+            <li><strong>對投資人：</strong> 自動避開隱形成本（高費用、低流動性），讓錢花在刀口上。</li>
+            <li><strong>對金融機構：</strong> 解決「垃圾進，垃圾出」痛點，提升智能理財系統的科學依據與信任度。</li>
+            <li><strong>技術優勢：</strong> 模組化設計，可隨市場需求快速擴充新的量化評級指標。</li>
+        </ul>
+    </section>
+
+</div>
+
+<div class="footer">
+    <p>© 2026 金融科技期中報告 - Smart-E Robo 項目小組</p>
+    <p>日期：2026/04/14</p>
+</div>
+
+</body>
+</html>
